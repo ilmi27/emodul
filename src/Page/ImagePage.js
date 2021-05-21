@@ -66,16 +66,18 @@ const ImagePage = ({route, navigation}) => {
           }}>
           {title}
         </Text>
-        <Text
-          style={{
-            color: 'rgba(255,255,255,0.8)',
-            fontSize: 12,
-            marginTop: 6,
-            fontWeight: 'bold',
-            fontStyle: 'italic',
-          }}>
-          {`(Sumber: ${source})`}
-        </Text>
+        {source ? (
+          <Text
+            style={{
+              color: 'rgba(255,255,255,0.8)',
+              fontSize: 12,
+              marginTop: 6,
+              fontWeight: 'bold',
+              fontStyle: 'italic',
+            }}>
+            {`(Sumber: ${source})`}
+          </Text>
+        ) : null}
       </View>
     );
   };

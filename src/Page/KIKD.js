@@ -1,9 +1,20 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {SafeAreaView, View, ScrollView} from 'react-native';
 import Header from '../Component/Header';
 import CardKIKD from '../Component/CardKIKD';
+import Loading from '../Component/Loading';
+import CardMindMap from '../Component/CardMindMap';
+import CardTujuan from '../Component/CardTujuan';
 
 const KIKD = ({navigation}) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   const ki = {
     ki3: {
       text:
@@ -33,23 +44,29 @@ const KIKD = ({navigation}) => {
   return (
     <>
       <SafeAreaView style={{flex: 1}}>
-        <Header navigation={navigation} title={'KI & KD'} />
-        <ScrollView>
-          <View>
-            <CardKIKD
-              ki={ki}
-              ic="lightbulb-on-outline"
-              tp={'Kompetensi Inti (KI)'}
-            />
-          </View>
-          <View>
-            <CardKIKD
-              kd={kd}
-              ic="file-document-outline"
-              tp={'Kompetensi Dasar (KD)'}
-            />
-          </View>
-        </ScrollView>
+        <Header navigation={navigation} title={'Kompetensi'} />
+        {loading ? (
+          <Loading isVisible={loading} />
+        ) : (
+          <ScrollView>
+            <View>
+              <CardKIKD
+                ki={ki}
+                ic="lightbulb-on-outline"
+                tp={'Kompetensi Inti (KI)'}
+              />
+            </View>
+            <View>
+              <CardKIKD
+                kd={kd}
+                ic="file-document-outline"
+                tp={'Kompetensi Dasar (KD)'}
+              />
+            </View>
+            <CardMindMap nav={navigation} />
+            <CardTujuan />
+          </ScrollView>
+        )}
       </SafeAreaView>
     </>
   );

@@ -96,12 +96,12 @@ const Tes1 = ({navigation, route}) => {
                 <View>
                   {_renderCiri(
                     'a. ',
-                    'Gambarkanlah struktur tubuh virus beserta keterangannya.',
+                    'Gambarkanlah struktur tubuh virus beserta keterangannya!',
                   )}
                   {_renderCiri('b. ', 'Sebutkan ciri-ciri virus secara umum!')}
                   {_renderCiri(
                     'c. ',
-                    'Dari ciri-ciri tersebut identifikasi mana ciri virus sebagai mahluk hidup mana ciri sebagai benda mati?',
+                    'Dari ciri-ciri tersebut identifikasi mana ciri virus sebagai mahluk hidup mana ciri sebagai benda mati!',
                   )}
                 </View>
               </View>

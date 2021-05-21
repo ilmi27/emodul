@@ -54,9 +54,39 @@ const CardDapus = () => {
       <View style={styles.body}>
         {_renderItem(
           '',
+          'Hamka. 2015.',
+          'Tafsir Al- Azhar.',
+          'Depok: Gema Insani Press.',
+        )}
+        {_renderItem(
+          '',
           'Irnaningtyas. 2013.',
           'Biologi untuk SMA/MA Kelas X Kelompok Peminatan Matematika dan Ilmu Alam.',
-          'Jakarta: Erlangga',
+          'Jakarta: Erlangga.',
+        )}
+        {_renderItem(
+          '',
+          'Pahmi, Khairil dan Natsir Abdullah. 2021.',
+          'Mengkaji Sifat-Sifat Virus Dalam Al-Qur’an untuk Mentadabburi Isi Al-Qur’an',
+          'Indonesian Scholars Network.',
+        )}
+        {_renderItem(
+          '',
+          'al-Raziy, Al-Fakhr. 1995.',
+          `al-Tafsir al-Kabir. Beirut: Dar Ihya' al-Turath al-'Arabiy.`,
+          '',
+        )}
+        {_renderItem(
+          '',
+          'Shihab, Quraish. 2005.',
+          `Tafsir Al- Mishba.`,
+          'Jakarta: Penerbit Lentera Hati.',
+        )}
+        {_renderItem(
+          '',
+          'Wathoni, Lalu Muhammad Nurul dan Nursyamsu. 2020.',
+          `Tafsir Virus, Fauqa Ba’udhah: Korelasi Covid-19 dengan Ayat-ayat Allah.`,
+          'Jurnal el-Umdah 3, No. 1.',
         )}
         {_renderItem(
           '',
@@ -64,38 +94,51 @@ const CardDapus = () => {
           'Buku Saku Aktif dan Kreatif Biologi untuk Sekolah Menengah Atas/Madrasah Aliyah Kelas X Peminatan Matematika dan Ilmu Alam.',
           'Bandung: Grafindo Media Pratama.',
         )}
+
         {_renderItem(
-          'http://aisyah-islamia.blogspot.co.id/2013/09/struktur-virus.html',
+          'http://aisyah-islamia.blogspot.co.id/2013/09/struktur-virus.html.',
           '',
           '',
           '',
         )}
         {_renderItem(
-          'https://i.ytimg.com/vi/Di9SoR8ihJs/hqdefault.jpg',
+          'http://doctorology.net/wp-content/uploads/2009/hiv.jpg.',
           '',
           '',
           '',
         )}
         {_renderItem(
-          'http://literasibio.blogspot.co.id/2015/12/siklus-hidup-virus-siklus-litik-dan_30.html',
+          'https://i.ytimg.com/vi/Di9SoR8ihJs/hqdefault.jpg.',
           '',
           '',
           '',
         )}
         {_renderItem(
-          'http://muhammadnurawal.blogspot.co.id/2011/12/struktur-tubuh-virus-dan-penjelasannya.html',
+          'http://literasibio.blogspot.co.id/2015/12/siklus-hidup-virus-siklus-litik-dan_30.html.',
           '',
           '',
           '',
         )}
         {_renderItem(
-          'http://www.ebiologi.com/2016/03/struktur-tubuh-macam-macam-bentuk-virus.html',
+          'http://muhammadnurawal.blogspot.co.id/2011/12/struktur-tubuh-virus-dan-penjelasannya.html.',
           '',
           '',
           '',
         )}
         {_renderItem(
-          'http://www.referensibebas.com/2016/03/tahapan-siklus-litik-pada-replikasi.html',
+          'http://www.ebiologi.com/2016/03/struktur-tubuh-macam-macam-bentuk-virus.html.',
+          '',
+          '',
+          '',
+        )}
+        {_renderItem(
+          'http://www.referensibebas.com/2016/03/tahapan-siklus-litik-pada-replikasi.html.',
+          '',
+          '',
+          '',
+        )}
+        {_renderItem(
+          'http://www.tutor.com.my/creative/sep/image/SPM_BI2m3.jpg.',
           '',
           '',
           '',

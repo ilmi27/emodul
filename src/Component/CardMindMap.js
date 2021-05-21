@@ -1,24 +1,37 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableWithoutFeedback,
+} from 'react-native';
 import {mainColor} from '../constants/color';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const CardMindMap = () => {
+const CardMindMap = ({nav}) => {
   return (
     <View style={styles.main}>
       <View style={styles.head}>
         <Text style={styles.title}>Mind Map</Text>
       </View>
-      <View style={styles.body}>
+      <TouchableWithoutFeedback
+        style={styles.body}
+        onPress={() =>
+          nav.navigate('ImagePage', {
+            url: require('../assets/image/mm1.png'),
+            title: 'Mind Map',
+          })
+        }>
         <Image
           resizeMode="stretch"
           style={{width: wp('88'), height: hp('68')}}
-          source={require('../assets/image/mindmap.png')}
+          source={require('../assets/image/mm1.png')}
         />
-      </View>
+      </TouchableWithoutFeedback>
     </View>
   );
 };

@@ -233,6 +233,7 @@ const Tes2 = ({navigation, route}) => {
                     </Text>
                   </View>
                 </View>
+
                 {renderData()}
               </View>
             </View>

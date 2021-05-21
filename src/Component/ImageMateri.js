@@ -25,13 +25,15 @@ const ImageMateri = ({uri, title, source, nav}) => {
         }}>
         {title}
       </Text>
-      <Text
-        style={{
-          fontStyle: 'italic',
-          textAlign: 'center',
-          maxWidth: wp('80'),
-          fontSize: 14,
-        }}>{`(Sumber: ${source})`}</Text>
+      {source ? (
+        <Text
+          style={{
+            fontStyle: 'italic',
+            textAlign: 'center',
+            maxWidth: wp('80'),
+            fontSize: 14,
+          }}>{`(Sumber: ${source})`}</Text>
+      ) : null}
     </View>
   );
 };

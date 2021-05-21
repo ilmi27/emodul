@@ -5,11 +5,12 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import Header from '../Component/Header';
+import {mainColor} from '../constants/color';
 
 const Home = ({navigation}) => {
   return (
     <>
-      <SafeAreaView style={{flex: 1}}>
+      <SafeAreaView style={{flex: 1, backgroundColor: 'white'}}>
         <Header navigation={navigation} title={'Home'} />
         <Image
           style={{resizeMode: 'stretch', width: wp('100'), height: hp('100')}}

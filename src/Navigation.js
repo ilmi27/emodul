@@ -6,6 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import CustomDrawerContent from './Component/DrawerContent';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
+import Toast from 'react-native-toast-message';
 
 const Drawer = createDrawerNavigator();
 const Stack = createStackNavigator();
@@ -100,7 +101,7 @@ function MyDrawer() {
         name="KIKD"
         component={KIKD}
         options={{
-          title: 'KI & KD',
+          title: 'Kompetensi',
           drawerIcon: ({focused}) => (
             <Icon
               name="bookmark-multiple-outline"
@@ -243,7 +244,11 @@ function Navigation() {
           component={Tes2}
           options={{headerShown: false}}
         />
-        <Stack.Screen name="Tes3" component={Tes3} />
+        <Stack.Screen
+          name="Tes3"
+          component={Tes3}
+          options={{headerShown: false}}
+        />
         <Stack.Screen
           name="ImagePage"
           component={ImagePage}
@@ -263,6 +268,7 @@ const App = () => {
     <>
       <StatusBar backgroundColor={mainColor} barStyle={'light-content'} />
       <Navigation />
+      <Toast ref={(ref) => Toast.setRef(ref)} />
     </>
   );
 };

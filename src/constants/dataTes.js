@@ -146,7 +146,7 @@ export const dataTes = [
       {id: 1, answer: 'Fermentasi dan vaksin', selected: false},
       {id: 2, answer: 'Antibiotik dan vaksin', selected: false},
       {id: 3, answer: 'Vaksin dan penelitian genetika', selected: false},
-      {id: 4, answer: 'Antibiotik dan penelitian genetika ', selected: false},
+      {id: 4, answer: 'Antibiotik dan penelitian genetika', selected: false},
       {id: 5, answer: 'Antitoksin dan vaksin', correct: true, selected: false},
     ],
     answer: 'E. Antitoksin dan vaksin',
@@ -155,47 +155,211 @@ export const dataTes = [
   },
   {
     id: 't9',
-    question: 'Perbedaan antara Ribovirus dan Deoksiribovirus adalah....',
+    question:
+      'Pemberian vaksin dapat memberikan kekebalan secara aktif bagi tubuh manusia, beberapa di antaranya berasal dari vaksin virus mati. Contoh dari vaksin mati adalah....',
     options: [
-      {id: 1, answer: 'Kepala', selected: false},
-      {id: 2, answer: 'Ekor', selected: false},
-      {id: 3, answer: 'Isi', selected: false},
-      {id: 4, answer: 'Asam nukleatnya', correct: true, selected: false},
-      {id: 5, answer: 'Kapsid', selected: false},
+      {id: 1, answer: 'MMR', selected: false},
+      {id: 2, answer: 'BCG', selected: false},
+      {id: 3, answer: 'Cacar air', selected: false},
+      {id: 4, answer: 'Vaksin flu semprot', selected: false},
+      {id: 5, answer: 'DPT', selected: false, correct: true},
     ],
-    answer: 'D. Asam nukleatnya',
+    answer: 'E. DPT',
     selected: false,
     image: null,
   },
   {
     id: 't10',
-    question:
-      'Virus dalam melakukan replikasi, virus akan mengambil alih fungsi dna bakteri untuk....',
+    question: 'Perbedaan antara Ribovirus dan Deoksiribovirus adalah....',
     options: [
       {
         id: 1,
-        answer: 'Menghancurkan dinding sel bakteri (lisis)',
+        answer: 'Kepala',
         selected: false,
       },
       {
         id: 2,
-        answer: 'Melaksanakan sintesis protein dan membuat struktur virus baru',
-        correct: true,
+        answer: 'Ekor',
         selected: false,
       },
-      {id: 3, answer: 'Membuat DNA versi baru', selected: false},
+      {id: 3, answer: 'Isi', selected: false},
       {
         id: 4,
-        answer: 'Mengaktifkan inti sel inang untuk memproduksi enzim baru',
+        answer: 'Asam Nukleatnya',
+        selected: false,
+        correct: true,
+      },
+      {
+        id: 5,
+        answer: 'Kapsid',
+        selected: false,
+      },
+    ],
+    answer: 'D. Asam Nukleatnya',
+    selected: false,
+    image: null,
+  },
+
+  {
+    id: 't11',
+    question:
+      'Virus dalam melakukan replikasi, virus akan mengambil alih fungsi DNA bakteri untuk...',
+    options: [
+      {
+        id: 1,
+        answer: 'Menghancurkan dinding sel bakteri (lisis).',
+        selected: false,
+      },
+      {
+        id: 2,
+        answer:
+          'Melaksanakan sintesis protein dan membuat struktur virus baru.',
+        selected: false,
+        correct: true,
+      },
+      {id: 3, answer: 'Membuat DNA versi baru.', selected: false},
+      {
+        id: 4,
+        answer: 'Mengaktifkan inti sel inang untuk memproduksi enzim baru.',
         selected: false,
       },
       {
         id: 5,
-        answer: 'Melumpuhkan inang agar tidak bisa bereproduksi',
+        answer: 'Melumpuhkan inang agar tidak bisa bereproduksi.',
         selected: false,
       },
     ],
-    answer: 'B. Melaksanakan sintesis protein dan membuat struktur virus baru',
+    answer: 'B. Melaksanakan sintesis protein dan membuat struktur virus baru.',
+    selected: false,
+    image: null,
+  },
+
+  {
+    id: 't12',
+    question: `Perhatikan ciri-ciri makhluk hidup berikut ini!\n(a)	Organisme multiseluler\n(b)	Sel eukariotik\n(c)	Organisme aseluler\n(d)	Memiliki membran inti\n(e)	Bersifat parasit obligat\n(f)	Tubuh tersusun atas molekul RNA atau DNA\n(g)	Heterotrof\nYang merupakan ciri-ciri virus adalah....`,
+    options: [
+      {
+        id: 1,
+        answer: '(a) (b) dan (c)',
+        selected: false,
+      },
+      {
+        id: 2,
+        answer: '(b) (d) dan (e)',
+        selected: false,
+      },
+      {id: 3, answer: '(d) (e) dan (f)', selected: false},
+      {
+        id: 4,
+        answer: '(c) (e) dan (f)',
+        selected: false,
+        correct: true,
+      },
+      {
+        id: 5,
+        answer: '(e) (f) dan (g)',
+        selected: false,
+      },
+    ],
+    answer: 'D. (c) (e) dan (f)',
+    selected: false,
+    image: null,
+  },
+
+  {
+    id: 't13',
+    question:
+      'Penyakit demam berdarah yang timbul di berbagai kota di Indonesia disebabkan oleh....',
+    options: [
+      {
+        id: 1,
+        answer: 'Aedes aegypti',
+        selected: false,
+      },
+      {
+        id: 2,
+        answer: 'Amoeba',
+        selected: false,
+      },
+      {id: 3, answer: 'Bakteri', selected: false},
+      {
+        id: 4,
+        answer: 'Plasmodium',
+        selected: false,
+      },
+      {
+        id: 5,
+        answer: 'Virus Dengue',
+        selected: false,
+        correct: true,
+      },
+    ],
+    answer: 'E. Virus Dengue',
+    selected: false,
+    image: null,
+  },
+
+  {
+    id: 't14',
+    question:
+      'Di bawah ini adalah penyakit yang disebabkan oleh virus:\n(1) New Castle Disease (NCD)\n(2) Citrus Vein Phloem Degeneration (CVPD)\n(3) Foot and Mouth Disease (FMD)\n(4) Tobacco Mosaik Virus (TMV)\n(5) Tungro\nPenyakit yang menyerang tumbuhan adalah....',
+    options: [
+      {
+        id: 1,
+        answer: '1, 4 dan 5',
+        selected: false,
+      },
+      {
+        id: 2,
+        answer: '2, 4 dan 5',
+        selected: false,
+        correct: true,
+      },
+      {id: 3, answer: '2, 3 dan 4', selected: false},
+      {
+        id: 4,
+        answer: '3, 4 dan 5',
+        selected: false,
+      },
+      {
+        id: 5,
+        answer: '1, 2 dan 3',
+        selected: false,
+      },
+    ],
+    answer: 'B. 2, 4 dan 5',
+    selected: false,
+    image: null,
+  },
+
+  {
+    id: 't15',
+    question: 'Virus HIV sangat berbahaya karena menyerang....',
+    options: [
+      {
+        id: 1,
+        answer: 'Sistem pertahanan tubuh manusia',
+        selected: false,
+      },
+      {
+        id: 2,
+        answer: 'Hati',
+        selected: false,
+      },
+      {id: 3, answer: 'Otot', selected: false},
+      {
+        id: 4,
+        answer: 'Sel darah putih',
+        selected: false,
+        correct: true,
+      },
+      {
+        id: 5,
+        answer: 'Otak',
+        selected: false,
+      },
+    ],
+    answer: 'A. Sistem pertahanan tubuh manusia',
     selected: false,
     image: null,
   },

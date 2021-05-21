@@ -1,34 +1,47 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {FlatList, SafeAreaView, View, Text, StyleSheet} from 'react-native';
 import Header from '../Component/Header';
 import CardPetunjuk from '../Component/CardPetunjuk';
 import {dataPetunjuk} from '../constants/dataPetunjuk';
 import {mainColor} from '../constants/color';
 import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
+import Loading from '../Component/Loading';
 
 const Petunjuk = ({navigation}) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
       <SafeAreaView style={{flex: 1}}>
         <Header navigation={navigation} title={'Petunjuk'} />
-        <View>
-          <FlatList
-            style={styles.list}
-            data={dataPetunjuk}
-            removeClippedSubviews={true}
-            keyExtractor={(item) => item.id}
-            renderItem={({item}) => <CardPetunjuk item={item} />}
-            ListFooterComponent={() => {
-              return (
-                <View style={styles.footer}>
-                  <Text style={styles.footerText}>
-                    SELAMAT BELAJAR, SEMOGA SUKSES
-                  </Text>
-                </View>
-              );
-            }}
-          />
-        </View>
+        {loading ? (
+          <Loading isVisible={loading} />
+        ) : (
+          <View>
+            <FlatList
+              style={styles.list}
+              data={dataPetunjuk}
+              removeClippedSubviews={true}
+              keyExtractor={(item) => item.id}
+              renderItem={({item}) => <CardPetunjuk item={item} />}
+              ListFooterComponent={() => {
+                return (
+                  <View style={styles.footer}>
+                    <Text style={styles.footerText}>
+                      SELAMAT BELAJAR, SEMOGA SUKSES
+                    </Text>
+                  </View>
+                );
+              }}
+            />
+          </View>
+        )}
       </SafeAreaView>
     </>
   );

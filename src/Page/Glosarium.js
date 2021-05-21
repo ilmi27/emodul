@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Text, SafeAreaView, SectionList, View, StyleSheet} from 'react-native';
 import Header from '../Component/Header';
 import {dataGlosarium} from '../constants/dataGlosarium';
 import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
+import Loading from '../Component/Loading';
 
 const Glosarium = ({navigation}) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+
   const _renderItem = (item) => {
     return (
       <View>
@@ -49,15 +58,19 @@ const Glosarium = ({navigation}) => {
     <>
       <SafeAreaView style={{flex: 1}}>
         <Header navigation={navigation} title={'Glosarium'} />
-        <View style={{padding: 16}}>
-          <SectionList
-            sections={dataGlosarium}
-            keyExtractor={(item, index) => item + index}
-            renderItem={({item}) => _renderItem(item)}
-            renderSectionHeader={({section: {title}}) => _renderHeader(title)}
-            style={styles.main}
-          />
-        </View>
+        {loading ? (
+          <Loading isVisible={loading} />
+        ) : (
+          <View style={{padding: 16}}>
+            <SectionList
+              sections={dataGlosarium}
+              keyExtractor={(item, index) => item + index}
+              renderItem={({item}) => _renderItem(item)}
+              renderSectionHeader={({section: {title}}) => _renderHeader(title)}
+              style={styles.main}
+            />
+          </View>
+        )}
       </SafeAreaView>
     </>
   );

@@ -37,6 +37,7 @@ const CardTujuan = () => {
         <Text style={styles.desc}>
           Setelah mempelajari sub materi VIRUS, peserta didik diharapkan dapat:
         </Text>
+
         {_renderItem(dataTujuan.t1)}
         {_renderItem(dataTujuan.t2)}
         {_renderItem(dataTujuan.t3)}
@@ -47,11 +48,6 @@ const CardTujuan = () => {
         {_renderItem(dataTujuan.t8)}
         {_renderItem(dataTujuan.t9)}
         {_renderItem(dataTujuan.t10)}
-        {_renderItem(dataTujuan.t11)}
-        {_renderItem(dataTujuan.t12)}
-        {_renderItem(dataTujuan.t13)}
-        {_renderItem(dataTujuan.t14)}
-        {_renderItem(dataTujuan.t15)}
       </View>
     </View>
   );

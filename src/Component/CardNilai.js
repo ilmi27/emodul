@@ -1,8 +1,16 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, FlatList} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  TouchableOpacity,
+  FlatList,
+  ToastAndroid,
+} from 'react-native';
 import {mainColor} from '../constants/color';
 import {widthPercentageToDP as wp} from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import Toast from 'react-native-toast-message';
 
 const CardNilai = ({data, answers, set, submitted}) => {
   const [jum, setJum] = useState(0);
@@ -37,13 +45,22 @@ const CardNilai = ({data, answers, set, submitted}) => {
 
   const onPress = () => {
     if (!submitted) {
-      set(true);
-      const j = answers.filter((i) => i.correct === true);
-      setJum(j.length);
+      if (data.length !== answers.length) {
+        Toast.show({
+          type: 'error',
+          text1: 'Gagal!',
+          text2:
+            'Jawaban Belum Lengkap. Silahkan Lengkapi Jawaban Terlebih Dahulu!',
+        });
+      } else {
+        set(true);
+        const j = answers.filter((i) => i.correct === true);
+        setJum(j.length);
+      }
     }
   };
 
-  const total = jum * 10;
+  const total = (jum / 15) * 100;
   const kategori =
     total <= 55
       ? 'Kurang'
@@ -69,7 +86,7 @@ const CardNilai = ({data, answers, set, submitted}) => {
             size={26}
           />
           <Text style={styles.desc}>
-            {submitted ? `${total} [${kategori}]` : 'Update Nilai'}
+            {submitted ? `${total.toFixed(2)} [${kategori}]` : 'Update Nilai'}
           </Text>
         </TouchableOpacity>
       </View>

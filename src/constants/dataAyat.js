@@ -8,7 +8,7 @@ export const dataAyat = {
   ter2:
     '”Engkau masukkan malam ke dalam siang dan Engkau masukkan siang ke dalam malam. Dan Engkau keluarkan yang hidup dari yang mati, dan Engkau keluarkan yang mati dari yang hidup. Dan Engkau berikan rezeki kepada siapa yang Engkau kehendaki tanpa perhitungan.”',
   ayat3:
-    'مَآ اَصَابَ مِنْ مُّصِيْبَةٍ فِى الْاَرْضِ وَلَا فِيْٓ اَنْفُسِكُمْ اِلَّا فِيْ كِتٰبٍ مِّنْ قَبْلِ اَنْ نَّبْرَاَهَا ۗاِنَّ ذٰلِكَ عَلَى اللّٰهِ يَسِيْرٌۖ',
+    'يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْٓا اِذَا قُمْتُمْ اِلَى الصَّلٰوةِ فَاغْسِلُوْا وُجُوْهَكُمْ وَاَيْدِيَكُمْ اِلَى الْمَرَافِقِ وَامْسَحُوْا بِرُءُوْسِكُمْ وَاَرْجُلَكُمْ اِلَى الْكَعْبَيْنِۗ ',
   ter3:
-    '“Setiap bencana yang menimpa di bumi dan yang menimpa dirimu sendiri, semuanya telah tertulis dalam Kitab (Lauh Mahfuzh) sebelum Kami mewujudkannya. Sungguh, yang demikian itu mudah bagi Allah."',
+    '"Hai orang-orang yang beriman, apabila kamu hendak mengerjakan shalat, maka basuhlah mukamu dan tanganmu sampai dengan siku, dan sapulah kepalamu dan (basuh) kakimu sampai dengan kedua mata kaki..."',
 };

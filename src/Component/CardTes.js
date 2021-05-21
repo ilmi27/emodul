@@ -191,6 +191,10 @@ const styles = StyleSheet.create({
     color: '#000',
     textAlign: 'justify',
   },
+  notSelect: {
+    borderWidth: 2,
+    borderColor: 'red',
+  },
 });
 
 export default CardTes;
